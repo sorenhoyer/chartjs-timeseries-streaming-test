@@ -8,13 +8,12 @@
 
         <script>
             (function(){
-                var maxHorizontalValues = 1000;
+                var maxHorizontalValues = 2000;
                 var num = 0;
                 var scale = 100;
 
                 var lineChartData = {
                     datasets: [{
-                        animation: false,
                         label: "My First dataset",
                         fill: false,
                         backgroundColor: "rgba(220,220,220,0.2)",
@@ -40,6 +39,7 @@
                 var myLine = new Chart.Line(ctx, {
                     data: lineChartData,
                     options: {
+                        animation: false,
                         responsive: true,
                         tooltips: {
                             enabled: false
